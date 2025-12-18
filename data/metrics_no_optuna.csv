@@ -1,0 +1,9 @@
+model_name,pca,optuna,f1_score,model_path
+logreg,False,False,0.0,../models/logreg_no_pca_no_optuna.pkl
+rf,False,False,0.0,../models/rf_no_pca_no_optuna.pkl
+gb,False,False,0.0,../models/gb_no_pca_no_optuna.pkl
+svm,False,False,0.0,../models/svm_no_pca_no_optuna.pkl
+logreg,True,False,0.0,../models/logreg_with_pca_no_optuna.pkl
+rf,True,False,0.0,../models/rf_with_pca_no_optuna.pkl
+gb,True,False,0.041666666666666664,../models/gb_with_pca_no_optuna.pkl
+svm,True,False,0.0,../models/svm_with_pca_no_optuna.pkl
