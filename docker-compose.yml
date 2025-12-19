@@ -2,7 +2,7 @@
 services:
   api:
     build:
-      context: ./api
+      context: .
       dockerfile: Dockerfile
     container_name: housing-api
     # Use 'expose' instead of 'ports' to keep it internal only
@@ -34,8 +34,7 @@ services:
     networks:
       - housing-network
     depends_on:
-      api:
-        condition: service_healthy
+      - api
     restart: unless-stopped
 
 networks:
